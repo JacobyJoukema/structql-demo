@@ -9,4 +9,4 @@ sudo apt-get -y install postgresql-10
 echo "Testing Install"
 psql -V
 
-echo "Run testutils/test-srv.sh to start the StructQL test server"
+echo "Run psql-srv/psql-run.sh to start the StructQL test server"
