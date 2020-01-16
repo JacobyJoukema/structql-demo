@@ -88,7 +88,7 @@ func PrintPeople(conn *structql.Connection) error {
 	// Iterate through each row and print the data
 	for _, row := range people {
 		person := row.(Person) // Select returns []interface{} must be cast to person
-		logger.Info("PERSID: %v, Name: %v, Age: %v, Email: %v", person.ID, person.Name, person.Age, person.Email)
+		logger.Info("PERSON[ID: %v, Name: %v, Age: %v, Email: %v]", person.ID, person.Name, person.Age, person.Email)
 	}
 
 	return nil
